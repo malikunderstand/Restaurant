@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Dessert</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- NaviGation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark py-4">
+      <div class="container">
+        <a href="#" class="navbar-brand">Famous</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-target="#navbar"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item p-2">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item p-2">
+              <a href="menu.html" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item p-2">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item p-2">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Weekly Page -->
+    <div class="container py-5" id="container5">
+      <div class="row py-3">
+        <h3 class="mt-3 mb-3 text-lg-center text-md-center text-center">
+          Weekly Dessert Item
+        </h3>
+
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="box">
+            <h4 class="text-left">Dessert</h4>
+            <hr />
+            <div class="box1">
+              <img src="img/d.jfif" alt="" id="imgId" />
+              <h5 id="nameId">Gulab Jamun</h5>
+              <p id="descId">
+                Soft and fresh khoya balls deep-fried and soaked in saffron
+                sugar syrup, served warm or cold.
+              </p>
+              <p id="priceId">$1</p>
+              <div class="one">
+                <div class="input-group">
+                  <span class="input-group-text bg-danger text-light decrease"
+                    >-</span
+                  >
+                  <input
+                    type="number"
+                    name=""
+                    value="0"
+                    readonly
+                    class="form-control text-center display"
+                  />
+                  <div class="input-group-prepand">
+                    <span class="input-group-text bg-danger text-light increase"
+                      >+</span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  onclick="addcart(this)"
+                >
+                  AddToCart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="box">
+            <h4 class="text-left">Dessert</h4>
+            <hr />
+            <div class="box1">
+              <img src="img/d1.jfif" alt="" id="imgId" />
+              <h5 id="nameId">Kheer (Rice Pudding)</h5>
+              <p id="descId">
+                Creamy rice pudding made with milk, sugar, cardamom, topped with
+                almonds and pistachios.
+              </p>
+              <p id="priceId">$1</p>
+              <div class="one">
+                <div class="input-group">
+                  <span class="input-group-text bg-danger text-light decrease"
+                    >-</span
+                  >
+                  <input
+                    type="number"
+                    name=""
+                    value="0"
+                    readonly
+                    class="form-control text-center display"
+                  />
+                  <div class="input-group-prepand">
+                    <span class="input-group-text bg-danger text-light increase"
+                      >+</span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  onclick="addcart(this)"
+                >
+                  AddToCart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="box">
+            <h4 class="text-left">Dessert</h4>
+            <hr />
+            <div class="box1">
+              <img src="img/d2.jfif" alt="" id="imgId" />
+              <h5 id="nameId">Chocolate Lava Cake</h5>
+              <p id="descId">
+                Rich chocolate cake with molten center, served warm with vanilla
+                ice cream or chocolate sauce.
+              </p>
+              <p id="priceId">$1.5</p>
+              <div class="one">
+                <div class="input-group">
+                  <span class="input-group-text bg-danger text-light decrease"
+                    >-</span
+                  >
+                  <input
+                    type="number"
+                    name=""
+                    value="0"
+                    readonly
+                    class="form-control text-center display"
+                  />
+                  <div class="input-group-prepand">
+                    <span class="input-group-text bg-danger text-light increase"
+                      >+</span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  onclick="addcart(this)"
+                >
+                  AddToCart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-3">
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="box">
+            <h4 class="text-left">Dessert</h4>
+            <hr />
+            <div class="box1">
+              <img src="img/d3.jfif" alt="" id="imgId" />
+              <h5 id="nameId">Fruit Trifle</h5>
+              <p id="descId">
+                Colorful Fresh layers of Milk cake and custard, jelly, fruits,
+                and whipped cream in a dessert glass.
+              </p>
+              <p id="priceId">$1.5</p>
+              <div class="one">
+                <div class="input-group">
+                  <span class="input-group-text bg-danger text-light decrease"
+                    >-</span
+                  >
+                  <input
+                    type="number"
+                    name=""
+                    value="0"
+                    readonly
+                    class="form-control text-center display"
+                  />
+                  <div class="input-group-prepand">
+                    <span class="input-group-text bg-danger text-light increase"
+                      >+</span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  onclick="addcart(this)"
+                >
+                  AddToCart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="box">
+            <h4 class="text-left">Dessert</h4>
+            <hr />
+            <div class="box1">
+              <img src="img/d4.jfif" alt="" id="imgId" />
+              <h5 id="nameId">Kulfi Falooda</h5>
+              <p id="descId">
+                Traditional kulfi topped with sweet falooda noodles, rose syrup,
+                basil seeds, and chilled milk.
+              </p>
+              <p id="priceId">$2</p>
+              <div class="one">
+                <div class="input-group">
+                  <span class="input-group-text bg-danger text-light decrease"
+                    >-</span
+                  >
+                  <input
+                    type="number"
+                    name=""
+                    value="0"
+                    readonly
+                    class="form-control text-center display"
+                  />
+                  <div class="input-group-prepand">
+                    <span class="input-group-text bg-danger text-light increase"
+                      >+</span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  onclick="addcart(this)"
+                >
+                  AddToCart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="box">
+            <h4 class="text-left">Dessert</h4>
+            <hr />
+            <div class="box1">
+              <img src="img/d5.jfif" alt="" id="imgId" />
+              <h5 id="nameId">Mango Delight</h5>
+              <p id="descId">
+                Seasonal Fresh mango cubes layered with cream, jelly, and cake
+                for a refreshing chilled dessert.
+              </p>
+              <p id="priceId">$2</p>
+              <div class="one">
+                <div class="input-group">
+                  <span class="input-group-text bg-danger text-light decrease"
+                    >-</span
+                  >
+                  <input
+                    type="number"
+                    name=""
+                    value="0"
+                    readonly
+                    class="form-control text-center display"
+                  />
+                  <div class="input-group-prepand">
+                    <span class="input-group-text bg-danger text-light increase"
+                      >+</span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  onclick="addcart(this)"
+                >
+                  AddToCart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reserve Page -->
+    <div class="container-fluid text-center py-5" id="container3">
+      <div class="row py-3">
+        <h3>Book Your Table Now</h3>
+        <div class="col-12 col-lg-8 col-md-12 offset-lg-2 offset-md-0">
+          <div class="div1 d-lg-flex d-md-flex text-center">
+            <img src="img/7.jpg" alt="" />
+            <form id="booking">
+              <h5>Reservation</h5>
+              <div class="gro d-lg-flex d-md-flex">
+                <div class="form-group m-2 w-100">
+                  <select name="" id="day" class="form-control" required>
+                    <option value="">Select Day</option>
+                    <option value="">Monday</option>
+                    <option value="">Tuesday</option>
+                    <option value="">Wednesday</option>
+                    <option value="">Thursday</option>
+                    <option value="">Friday</option>
+                  </select>
+                </div>
+                <div class="form-group m-2 w-100">
+                  <select name="" id="time" class="form-control" required>
+                    <option value="">Select Hour</option>
+                    <option value="">10:00</option>
+                    <option value="">11:00</option>
+                    <option value="">12:00</option>
+                    <option value="">08:00</option>
+                    <option value="">09:00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="gro d-lg-flex d-md-flex mt-lg-2">
+                <div class="form-group m-2">
+                  <input
+                    type="text"
+                    name=""
+                    id="name"
+                    placeholder="Enter Name"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group m-2">
+                  <input
+                    type="number"
+                    name=""
+                    id="number"
+                    placeholder="Enter Number"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="gro d-lg-flex d-md-flex mt-lg-2">
+                <div class="form-group m-2 w-100">
+                  <select name="" id="person" class="form-control" required>
+                    <option value="">How Many Person</option>
+                    <option value="">01 Person</option>
+                    <option value="">02 Person</option>
+                    <option value="">03 Person</option>
+                    <option value="">04 Person</option>
+                    <option value="">05 Person</option>
+                  </select>
+                </div>
+                <div class="form-group m-2 w-100">
+                  <input
+                    type="submit"
+                    value="Book Table"
+                    class="form-control bg-danger text-light"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Page -->
+    <footer class="bg-light text-dark text-center py-4">
+      <h5>Copyright © 2020 Famous Template</h5>
+    </footer>
+
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
