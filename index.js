@@ -75,7 +75,7 @@ function displayCart() {
         <div class="col-md-5 p-2">
           <img src="${
             item.image
-          }" class="img-fluid rounded-start mt-4 ml-5" height="80px" alt="${item.name}">
+          }" class="img-fluid rounded-start mt-4 ml-5" height="100px" alt="${item.name}">
         </div>
         <div class="col-md-7">
           <div class="card-body text-sm-center mt-2">
