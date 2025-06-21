@@ -36,6 +36,7 @@ function addcart(button) {
   localStorage.setItem('cart', JSON.stringify(cart));
   displayCart();
   alert(name + ' added to cart!');
+  this.reset();
 }
 
 // Step 3:
